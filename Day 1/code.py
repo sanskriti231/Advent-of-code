@@ -1,3 +1,5 @@
+#part 1
+
 arr1 = list()
 arr2 = list()
 with open("input.txt", 'r') as f:
@@ -16,3 +18,11 @@ for i in range(1000):
     sum += abs(diff)
     
 print(sum)
+
+#part 2
+
+similarity_score = 0
+for i in arr1:
+    similarity_score += int(i) * arr2.count(i)
+
+print(similarity_score)
